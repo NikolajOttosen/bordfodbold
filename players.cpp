@@ -4,22 +4,28 @@ using namespace std;
 
 player::player(string n)
 {
+    Elo1v1 = 1200;
+    Elo2v2 = 1200;
     Name = n;
 }
 
-player::getElo()
+int player::getElo()
 {
-    return Elo;
+    return Elo1v1;
 }
 
-player::getName()
+string player::getName()
 {
     return Name;
 }
 
-player::getStreak()
+int player::getStreak()
 {
     return Winstreak;
 }
 
-
+void player::updateElo(int n, int type)
+{
+    Elo1v1 = n;
+    Elo2v2 = n;
+}
