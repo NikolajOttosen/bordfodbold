@@ -16,8 +16,10 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += main.cpp \
     players.cpp \
-    leaderboard.cpp
+    leaderboard.cpp \
+    match.cpp
 
 HEADERS += \
     players.h \
-    leaderboard.h
+    leaderboard.h \
+    match.h
