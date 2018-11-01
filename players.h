@@ -9,6 +9,8 @@ public:
     getElo();
     getName();
     getStreak();
+
+    //SHP ADDED THIS
 private:
     string Name;
     int Elo;
